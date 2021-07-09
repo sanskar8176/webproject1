@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap');
+
+
+/* box shadow ke jghfilter me drop shadow se images ki shodow dikha skte hai  */
+
+
+
+*{
+
+    font-family: 'Piazzolla', serif;
+    margin :0;
+    padding :0;
+    box-sizing: border-box;
+
+}
+
+:root{
+
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+
+}
+html{
+    font-size:62.5%;
+    /* esse 1rem=10px ho gya  */
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+/* for putting fotter on the bottom  */
+}
+
+.row{
+    margin :0;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+
+}
+.navbar{
+    background-color: var(--main-bg);
+    color:#fff;
+    padding: 2rem 0;;
+}
+
+
+.navbar li{
+    margin-left: 2rem;
+}
+
+
+.navbar a{ color:#fff;
+    font-size: 1.8rem;
+
+}
+.navbar a:hover{ 
+    color: var(--main-color);
+    
+    
+    
+
+}
+.navbar-toggler{
+
+    background-color:#fff;
+}
+
+
+
+.fa-snowflake-o{
+    transition: all linear;
+    animation:rot 2s  linear infinite ;
+    color: var(--main-color);
+
+}
+
+
+@keyframes rot{
+    0%{transform:rotate(0deg);
+    
+    }
+100%{transform: rotate(360deg);
+}
+}
+
+.main_header_left{
+
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: flex-start;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.main_header_right{
+
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: flex-start;
+}
+
+
+
+
+footer{
+    background-color: var(--main-bg);
+    width: 100%;
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+footer p{
+
+margin: 0px;
+text-align: center;
+color: #fff;
+font-size: 2rem;
+line-height: 5rem;
+
+
+}
+
+
+/* responsivecoe using mediaquery */
+@media(max-width:750px){
+.main_header_left{
+
+    height: auto;
+   margin: 5rem 0;
+
+
+}
+
+
+.main_header_right{
+    height: auto;
+   margin-top: 5rem;
+   
+}
+
+
+}
